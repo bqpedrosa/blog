@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  width: inherit;
+  background: #e5e4e2;
+}
+
+.navbar__title {
+  display: inherit;
+  align-self: center;
+}
+
+.navbar__items {
+  display: inherit;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 8px;
+}
+
+.navbar__items-item a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar__items-item--active a {
+  font-weight: 700;
+}

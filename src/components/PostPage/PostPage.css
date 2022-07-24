@@ -1,0 +1,19 @@
+.post-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.post-page__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-page__list-items {
+  list-style-type: none;
+  padding: 4px;
+  margin: 0;
+}
