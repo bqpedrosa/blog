@@ -13,7 +13,7 @@ app.use(express.json());
 
 const postApi = require(__dirname + "/api/addPost.ts");
 
-app.get("/", (req: ExpressRequest, res: ExpressResponse) => {
+app.get("*", (req: ExpressRequest, res: ExpressResponse) => {
   res.sendFile(frontPath);
 });
 
