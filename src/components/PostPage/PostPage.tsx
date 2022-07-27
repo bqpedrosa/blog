@@ -8,7 +8,7 @@ export const PostPage: React.FC = () => {
   const [postList, setPostList] = useState([]);
 
   const handleAddPost = async () => {
-    axios.post("/post", { name });
+    axios.post("/api/post", { name });
 
     setName("");
 
@@ -16,7 +16,7 @@ export const PostPage: React.FC = () => {
   };
 
   const getPostList = async () => {
-    const response: any = await axios.get("/post");
+    const response: any = await axios.get("/api/post");
 
     setPostList(response.data);
   };
@@ -30,7 +30,7 @@ export const PostPage: React.FC = () => {
       <div className="post-page__list">
         <span>Post List:</span>
         <ul className="post-page__list-items">
-          {postList.map((post) => (
+          {postList?.map((post) => (
             <li>{post}</li>
           ))}
         </ul>
