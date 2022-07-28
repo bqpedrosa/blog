@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 import "./PostPage.css";
@@ -6,6 +6,11 @@ import "./PostPage.css";
 export const PostPage: React.FC = () => {
   const [name, setName] = useState("");
   const [postList, setPostList] = useState([]);
+
+  useEffect(() => {
+    const fetchPostList = async () => await getPostList();
+    fetchPostList();
+  }, []);
 
   const handleAddPost = async () => {
     axios.post("/api/post", { name });
