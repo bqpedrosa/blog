@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import "./Navbar.css";
+import "./Navbar.scss";
 
 export const Navbar: React.FC = () => {
   let location = useLocation();
@@ -20,7 +20,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav className="navbar">
-      <span className="navbar__title">bp journal</span>
+      <h1 className="navbar__title">BP testing</h1>
       <ul className="navbar__items">
         {navBarItems.map(({ name, route }) => (
           <li

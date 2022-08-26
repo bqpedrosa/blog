@@ -1,0 +1,9 @@
+.shared-input {
+  border: none;
+  height: 20px;
+  padding: 2px 4px;
+
+  &:focus {
+    outline: none;
+  }
+}

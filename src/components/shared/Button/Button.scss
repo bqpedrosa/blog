@@ -1,0 +1,22 @@
+.shared-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+  border: none;
+  color: white;
+  padding: 8px;
+  font-size: 12px;
+  margin: 4px 2px;
+  border-radius: 30px;
+  height: 32px;
+  cursor: pointer;
+
+  &:hover {
+    background: #505050;
+  }
+
+  &:active {
+    background: #585858;
+  }
+}

@@ -1,0 +1,23 @@
+.shared-expansion {
+  .shared-expansion__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #303030;
+    padding: 4px 8px;
+    cursor: pointer;
+
+    & > span {
+      display: inherit;
+    }
+
+    &::marker {
+      content: "";
+    }
+  }
+
+  .shared-expansion__child-slot {
+    padding: 4px 8px;
+    background: #383838;
+  }
+}

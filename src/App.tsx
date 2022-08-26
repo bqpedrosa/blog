@@ -8,7 +8,7 @@ import { PostPage } from "./components/PostPage/PostPage";
 
 const About: React.FC = () => {
   return (
-    <div style={{ padding: "16px" }}>
+    <div style={{ padding: "16px", color: "#fff" }}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dui eros,
       feugiat vitae mauris sed, sodales gravida augue. Morbi eu efficitur massa.
       Maecenas tincidunt pulvinar libero, pellentesque mollis elit tincidunt a.
@@ -27,7 +27,7 @@ const About: React.FC = () => {
 
 const ContactUs: React.FC = () => {
   return (
-    <div style={{ padding: "16px" }}>
+    <div style={{ padding: "16px", color: "#fff" }}>
       <h1>Contact us</h1>
     </div>
   );

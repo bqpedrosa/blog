@@ -1,7 +1,6 @@
 .App {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto;
-  background-color: #b2beb5;
+  display: grid;
+  grid-template-rows: [header] min-content [main] auto;
+  background-color: #383838;
   height: 100%;
 }
